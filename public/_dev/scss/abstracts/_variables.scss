@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// VARIABLES
+// -----------------------------------------------------------------------------
+
+// Colour Pallette
+$primary-color:#d6b659;
+$secondary-color:rgb(240, 187, 42);
+
+// Neutrals
+$dark-color:rgb(33, 37, 43);
+$mid-color:rgb(130, 130, 130);
+$light-color:rgb(245, 245, 245);
+
+// Social Media Colours
+$facebook-brand: rgb(59, 89, 152);
+$twitter-brand: rgb(85, 172, 238);
+$linkedin-brand: rgb(0, 123, 181);
+$g-plus-brand: rgb(221, 75, 57);
+$youtube-brand: rgb(187, 0, 0);
+
+// Text Variables
+$heading-font-stack: 'Cutive Mono', monospace !default;
+$text-font-stack: 'Cutive Mono', monospace !default;
+$text-color:rgba(white,0.6);
+$text-color-light:rgba(white,0.75);
+
+// Misc
+$transition-main: all 0.2s ease-in-out;
+$shadow-lg: 0 6px 38px rgba(0,0,0,0.20), 0 2px 12px rgba(0,0,0,0.1);

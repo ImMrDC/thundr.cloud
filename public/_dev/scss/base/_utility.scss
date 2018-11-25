@@ -1,0 +1,42 @@
+// -----------------------------------------------------------------------------
+// UTILITY CLASSES
+// -----------------------------------------------------------------------------
+
+// Coloring classes
+.c-primary {color:$primary-color!important;}
+.c-secondary {color:$secondary-color!important;}
+.c-dark {color:$dark-color!important;}
+.c-mid {color:$mid-color!important;}
+.c-light {color:$light-color!important;}
+
+.bg-primary {background-color:$primary-color!important;}
+.bg-secondary {background-color:$secondary-color!important;}
+.bg-dark {background-color:$dark-color!important;}
+.bg-mid {background-color:$mid-color!important;}
+.bg-light {background-color:$light-color!important;}
+
+
+// Padding and Margin Classes
+$spaceamounts: (5, 10, 15, 20, 30, 50, 80, 100);
+$sides: (top, bottom, left, right, all);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+
+    @if $side == 'all' {
+      .m#{$space} {
+        margin: #{$space}px;
+      }
+      .p#{$space} {
+        padding: #{$space}px;
+      }
+    } @else {
+      .m#{str-slice($side, 0, 1)}#{$space} {
+        margin-#{$side}: #{$space}px;
+      }
+      .p#{str-slice($side, 0, 1)}#{$space} {
+        padding-#{$side}: #{$space}px;
+      }
+    }
+  }
+}
