@@ -1,6 +1,6 @@
 var static = require('node-static');
 
-var port = 8080;
+var port = 80;
 
 var file = new static.Server('./public');
 
